@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ví dụ bố cục website responsive bằng CSS Flexbox.">
+    <title>Flexbox Layout | Studio Paper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="header">
+            <a class="brand" href="#"><span class="brand-icon">s.</span><span>studio<span class="brand-light">paper</span></span></a>
+            <span class="header-note">Ý TƯỞNG HAY, MỖI NGÀY</span>
+            <a class="header-link" href="#footer">Về chúng tôi <span>↗</span></a>
+        </header>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+            <a class="nav-link active" href="#home">Trang chủ</a>
+            <a class="nav-link" href="#stories">Câu chuyện</a>
+            <a class="nav-link" href="#ideas">Ý tưởng hay</a>
+            <a class="nav-link" href="#sidebar">Góc sống</a>
+            <a class="nav-link" href="#footer">Liên hệ</a>
+            <span class="nav-date">TẠP CHÍ SỐ 08 · 2026</span>
+        </nav>
+
+        <main id="home">
+            <section class="intro">
+                <div><p class="eyebrow">TẠP CHÍ SỐNG CHẬM</p><h1>Một chút cảm hứng<br><span>cho ngày mới.</span></h1></div>
+                <p class="intro-copy">Những câu chuyện, ý tưởng và khoảng lặng nhỏ giúp cuộc sống thường ngày trở nên ý nghĩa hơn.</p>
+            </section>
+
+            <section class="main-container" aria-label="Bài viết và nội dung phụ">
+                <div class="content" id="stories">
+                    <article class="feature">
+                        <div class="feature-art" role="img" aria-label="Minh họa mặt trời hồng giữa những ngọn đồi xanh">
+                            <span class="art-sun"></span><span class="art-hill hill-back"></span><span class="art-hill hill-front"></span><span class="art-caption">SLOW MORNINGS · VOL. 08</span>
+                        </div>
+                        <div class="feature-copy">
+                            <p class="eyebrow">NHỊP SỐNG · 6 PHÚT ĐỌC</p>
+                            <h2>Nghệ thuật bắt đầu một buổi sáng thật chậm</h2>
+                            <p>Không cần lịch trình hoàn hảo. Đôi khi, một tách trà ấm và vài phút yên tĩnh đã đủ để bạn lắng nghe chính mình.</p>
+                            <a href="#ideas" class="read-more">Đọc câu chuyện <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <section class="story-list" id="ideas">
+                        <div class="section-heading"><h2>Đọc thêm</h2><span>NHỮNG ĐIỀU NHỎ ĐÁNG YÊU</span></div>
+                        <div class="story-row">
+                            <span class="story-number">01</span><div><p class="eyebrow">GÓC NHÀ</p><h3>Một góc ban công, ba chậu cây và thật nhiều niềm vui</h3></div><span class="story-arrow">↗</span>
+                        </div>
+                        <div class="story-row">
+                            <span class="story-number">02</span><div><p class="eyebrow">SỐNG XANH</p><h3>Chọn chiếc bình bạn yêu, mang theo mỗi ngày</h3></div><span class="story-arrow">↗</span>
+                        </div>
+                        <div class="story-row">
+                            <span class="story-number">03</span><div><p class="eyebrow">GHI CHÉP</p><h3>Viết xuống một điều tốt đẹp trước khi ngủ</h3></div><span class="story-arrow">↗</span>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="sidebar" id="sidebar">
+                    <div class="side-label"><span>GÓC NHỎ</span><span>✳</span></div>
+                    <div class="quote-card"><span class="quote-mark">“</span><p>Hãy để mỗi ngày mang đến một điều khiến bạn mỉm cười.</p><span class="quote-by">— MỘT LỜI NHẮC NHẸ</span></div>
+                    <div class="subscribe">
+                        <p class="eyebrow">THƯ CUỐI TUẦN</p><h2>Một chút bình yên, gửi vào hộp thư.</h2><p>Nhận những câu chuyện mới từ studio.paper.</p>
+                        <a href="mailto:hello@example.com" class="subscribe-link">Viết thư cho chúng tôi <span>→</span></a>
+                    </div>
+                    <div class="sidebar-note"><span>✿</span><p>Đọc chậm thôi.<br>Không có gì phải vội.</p></div>
+                </aside>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer"><span>studio.paper</span><span>Một góc nhỏ dành cho điều đẹp đẽ.</span><span>© 2026 · MADE WITH CARE</span></footer>
+    </div>
+</body>
+</html>
